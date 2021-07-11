@@ -71,7 +71,7 @@
       <section class="hero">
         <div class="container">
           <h1>Эффективные решения для вашего бизнеса</h1>
-          <button type="button">Заказать услугу</button>
+          <button type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Strength -->
@@ -131,12 +131,15 @@
           <ul class="nostyle-ul">
             <li>
               <img src="./img/about/pc.jpg" alt="pc" width="370" height="294" />
+              <p>Десктопные приложения</p>
             </li>
             <li>
               <img src="./img/about/phone.jpg" alt="phone" width="370" height="294" />
+              <p>Мобильные приложения</p>
             </li>
             <li>
               <img src="./img/about/tablet.jpg" alt="tablet" width="370" height="294" />
+              <p>Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -376,5 +379,17 @@
         </div>
       </div>
     </footer>
+    <!-- Backdrop -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop-content">
+        <button class="backdrop-close-button" data-modal-close>
+          <svg class="close-button">
+            <use href="./img/spite.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- js link -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
