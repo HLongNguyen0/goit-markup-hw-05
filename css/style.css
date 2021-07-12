@@ -66,16 +66,17 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sm-icon-container:hover .sm-icon,
 .sm-icon-container:focus .sm-icon {
   fill: #ffffff;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sm-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* index */
 /* header */
@@ -94,13 +95,12 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-links a:hover,
 .header-links a:focus {
   color: var(--blueish);
   fill: var(--blueish);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav {
   display: flex;
@@ -111,6 +111,9 @@ ul {
 }
 .header-nav li:not(:last-child) {
   margin-right: 50px;
+}
+.header-nav a {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav a::after,
 .header-nav a::after {
@@ -123,12 +126,11 @@ ul {
   background-color: transparent;
   border-radius: 2px;
   opacity: 1;
-  transition: background-color 250ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav a:hover::after,
 .header-nav a:focus::after {
   background-color: var(--blueish);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contacts {
   display: flex;
@@ -349,13 +351,13 @@ ul {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon-container:hover,
 .clients-icon-container:focus {
   fill: var(--blueish);
   border: 1px solid var(--blueish);
   border-radius: 4px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* portfolio */
 .portfolio {
@@ -381,14 +383,14 @@ ul {
   line-height: 1.63;
   letter-spacing: 0.03em;
   color: inherit;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-navigation button:hover,
 .portfolio-navigation button:focus {
   cursor: pointer;
   color: #ffffff;
   background-color: var(--blueish);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-content {
   display: flex;
@@ -396,17 +398,16 @@ ul {
 }
 .portfolio-content a {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-content a:hover,
 .portfolio-content a:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-content a:hover .portfolio-overlay,
 .portfolio-content a:focus .portfolio-overlay {
   transform: none;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-content li:not(:nth-child(-n + 3)) {
   margin-top: 30px;
@@ -510,7 +511,6 @@ footer ul {
 .sm-icon-container:hover,
 .sm-icon-container:focus {
   background-color: var(--blueish);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* backdrop */
 .backdrop {
