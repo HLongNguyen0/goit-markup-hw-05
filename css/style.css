@@ -118,7 +118,7 @@ ul {
 .header-nav a::after,
 .header-nav a::after {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   content: '';
   width: 100%;
